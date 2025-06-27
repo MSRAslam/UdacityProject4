@@ -1,5 +1,5 @@
 from . import app
-import os
+import os  # importing os
 
 
 def test_movies_endpoint_returns_200():
