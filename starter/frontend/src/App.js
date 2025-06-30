@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MovieList from './components/MovieList';
 import MovieDetails from './components/MovieDetails';
-import './App.css';
+import './App.css';  //Testing frontend CD
 
 export default function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
