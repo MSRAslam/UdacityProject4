@@ -80,3 +80,8 @@ jobs:
         working-directory: starter/frontend/k8s
         run: |
           kustomize build | kubectl apply -f -
+
+          git filter-repo --path setup/terraform/.terraform --invert-paths
+git reset --soft HEAD~1
+git reset HEAD setup/terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/4.55.0/linux_amd64/terraform-provider-aws_v4.55.0_x5
+rm setup/terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/4.55.0/linux_amd64/terraform-provider-aws_v4.55.0_x5
